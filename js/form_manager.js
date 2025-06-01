@@ -1,7 +1,11 @@
 // ===== FORM-MANAGER.JS - ВАЛІДАЦІЯ ТА ВІДПРАВКА ФОРМ =====
 
-import { Utils, ApiUtils } from './utils.js';
+// Core utilities and configuration
+import { Utils, StorageUtils } from './utils.js';
 import { CONFIG, MESSAGES, VALIDATION_RULES, ANALYTICS_EVENTS } from './config.js';
+
+// Menu data and services
+import { MenuDataService } from './menu-data.js';
 
 export class FormManager {
     constructor() {

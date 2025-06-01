@@ -1,7 +1,10 @@
 // ===== MENU-MANAGER.JS - УПРАВЛІННЯ МЕНЮ UI =====
 
+// Core utilities and configuration
 import { Utils } from './utils.js';
 import { CONFIG, MENU_CATEGORIES, ANALYTICS_EVENTS } from './config.js';
+
+// Menu data and services
 import { MenuDataService, MENU_DATA, MENU_CATEGORIES_INFO, MENU_FILTERS } from './menu-data.js';
 
 export class MenuManager {
@@ -389,14 +392,14 @@ export class MenuManager {
             this.activeFilters.add(filter);
             btn.classList.add('active');
             btn.setAttribute('aria-pressed', 'true');
-            
-            this.viewMode = newView;
-            this.updateViewMode();
-            
-            this.trackEvent(ANALYTICS_EVENTS.MENU_VIEW_CHANGED, {
-                view_mode: newView
-            });
         }
+        
+        this.updateMenuDisplay();
+        this.trackEvent(ANALYTICS_EVENTS.MENU_FILTER_APPLIED, {
+            filter: filter,
+            active: !isActive,
+            active_filters: Array.from(this.activeFilters)
+        });
     }
     
     handleAddToCart(e) {
@@ -1198,39 +1201,4 @@ export class MenuManager {
     }
 }
 
-export default MenuManager;setAttribute('aria-pressed', 'true');
-        }
-        
-        this.updateMenuDisplay();
-        this.trackEvent(ANALYTICS_EVENTS.MENU_FILTER_APPLIED, {
-            filter: filter,
-            active: !isActive,
-            active_filters: Array.from(this.activeFilters)
-        });
-    }
-    
-    handleSortChange(sortValue) {
-        this.currentSort = sortValue;
-        this.updateMenuDisplay();
-        
-        this.trackEvent(ANALYTICS_EVENTS.MENU_SORTED, {
-            sort_method: sortValue,
-            category: this.activeCategory
-        });
-    }
-    
-    handleViewToggle(e) {
-        const btn = e.target.closest('.view-btn');
-        if (!btn) return;
-        
-        const newView = btn.dataset.view;
-        
-        if (newView !== this.viewMode) {
-            // Update button states
-            Utils.$$('.view-btn').forEach(b => {
-                b.classList.remove('active');
-                b.setAttribute('aria-pressed', 'false');
-            });
-            
-            btn.classList.add('active');
-            btn.
+export default MenuManager;
