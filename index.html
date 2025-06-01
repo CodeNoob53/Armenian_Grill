@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌯 Найсмачніша шаурма в Києві! Автентична вірменська кухня, люля-кебаб, гриль. Швидка доставка за 30 хвилин. Замовляйте онлайн ✅">
+    <meta name="keywords" content="шаурма київ, вірменська кухня, кебаб, люля-кебаб, доставка шаурми, гриль, вірменський ресторан, шаурма з доставкою">
+    <meta name="author" content="Armenian Grill House">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://armenian-grill.ua/">
+    <meta property="og:title" content="Armenian Grill House - Найсмачніша шаурма та вірменська кухня в Києві">
+    <meta property="og:description" content="🌯 Автентична вірменська кухня, соковита шаурма, люля-кебаб. Швидка доставка за 30 хвилин по Києву. Замовляйте зараз!">
+    <meta property="og:image" content="https://armenian-grill.ua/images/og-shawarma.jpg">
+    <meta property="og:locale" content="uk_UA">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://armenian-grill.ua/">
+    <meta property="twitter:title" content="Armenian Grill House - Найсмачніша шаурма в Києві">
+    <meta property="twitter:description" content="🌯 Автентична вірменська кухня, соковита шаурма, люля-кебаб. Швидка доставка за 30 хвилин.">
+    <meta property="twitter:image" content="https://armenian-grill.ua/images/twitter-shawarma.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://armenian-grill.ua/">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Title -->
+    <title>Armenian Grill House - Найсмачніша шаурма та вірменська кухня в Києві | Доставка за 30 хвилин</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Armenian Grill House",
+        "description": "Найсмачніша шаурма та автентична вірменська кухня в Києві з доставкою за 30 хвилин",
+        "url": "https://armenian-grill.ua",
+        "telephone": "+380441234567",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "вул. Хрещатик, 22",
+            "addressLocality": "Київ",
+            "postalCode": "01001",
+            "addressCountry": "UA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.4501,
+            "longitude": 30.5234
+        },
+        "openingHours": [
+            "Mo-Fr 10:00-23:00",
+            "Sa-Su 09:00-24:00"
+        ],
+        "servesCuisine": ["Armenian", "Middle Eastern", "Fast Food"],
+        "acceptsReservations": true,
+        "hasDeliveryService": true,
+        "priceRange": "₴₴",
+        "image": "https://armenian-grill.ua/images/restaurant-hero.jpg",
+        "menu": "https://armenian-grill.ua/#menu",
+        "sameAs": [
+            "https://www.facebook.com/armeniangrillhouse",
+            "https://www.instagram.com/armeniangrillhouse",
+            "https://t.me/armeniangrillhouse"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo">
+                <div class="logo-icon">🇦🇲</div>
+                <span class="logo-text">ARMENIAN GRILL</span>
+            </div>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Головна</a></li>
+                <li><a href="#about" class="nav-link">Про нас</a></li>
+                <li><a href="#menu" class="nav-link">Меню</a></li>
+                <li><a href="#delivery" class="nav-link">Доставка</a></li>
+                <li><a href="#contact" class="nav-link">Контакти</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="order-btn" aria-label="Замовити онлайн">
+                    <span>Замовити онлайн</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>🔥</span>
+                        <span>Автентична вірменська кухня</span>
+                    </div>
+                    <h1 class="hero-title">
+                        НАЙСМАЧНІША <span class="highlight">ШАУРМА</span> 
+                        <br>В КИЄВІ
+                    </h1>
+                    <p class="hero-description">
+                        Відчуйте справжній смак Вірменії! Соковита шаурма, ароматний люля-кебаб та страви на грилі, приготовані за автентичними рецептами. Швидка доставка за 30 хвилин по всьому Києву.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#menu" class="cta-primary">
+                            <span>Замовити зараз</span>
+                        </a>
+                        <a href="tel:+380441234567" class="cta-secondary">
+                            <span>📞 Подзвонити</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Задоволених клієнтів</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30</span>
+                            <span class="stat-label">Хвилин доставка</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Років досвіду</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="food-image">
+                        <div class="food-placeholder">
+                            🌯 Шаурма з куркою
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-item">🥙</div>
+                            <div class="float-item">🍖</div>
+                            <div class="float-item">🧅</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="section-badge">
+                            <span>🇦🇲</span>
+                            <span>Наша історія</span>
+                        </div>
+                        <h2 class="section-title">Традиційна вірменська кухня у серці Києва</h2>
+                        <p class="section-description">
+                            Armenian Grill House — це місце, де традиції зустрічаються з сучасністю. Ми готуємо за автентичними вірменськими рецептами, передаючи справжній смак Кавказу.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">🔥</div>
+                                <div class="feature-text">
+                                    <h3>Гриль на відкритому вогні</h3>
+                                    <p>М'ясо готується на справжньому мангалі для неперевершеного смаку</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">👨‍🍳</div>
+                                <div class="feature-text">
+                                    <h3>Досвідчені кухарі</h3>
+                                    <p>Наші шеф-кухарі мають понад 15 років досвіду вірменської кухні</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🥩</div>
+                                <div class="feature-text">
+                                    <h3>Найсвіжіше м'ясо</h3>
+                                    <p>Щодня отримуємо свіже м'ясо від перевірених постачальників</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-hours">
+                            <h3>Години роботи:</h3>
+                            <div class="hours-grid">
+                                <div class="hours-item">
+                                    <span>Пн - Пт:</span>
+                                    <span>10:00 - 23:00</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Сб - Нд:</span>
+                                    <span>09:00 - 24:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <span>Автентична вірменська кухня</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span>🍽️</span>
+                        <span>Наше спеціальне меню</span>
+                    </div>
+                    <h2 class="section-title">Популярні страви</h2>
+                    <p class="section-description">
+                        Відкрийте для себе автентичні смаки Вірменії з нашим вишуканим меню, приготованим за традиційними рецептами.
+                    </p>
+                </div>
+
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">Всі страви</button>
+                    <button class="tab-btn" data-category="shawarma">Шаурма</button>
+                    <button class="tab-btn" data-category="kebab">Кебаб</button>
+                    <button class="tab-btn" data-category="grill">Гриль</button>
+                    <button class="tab-btn" data-category="burger">Бургери</button>
+                </div>
+
+                <div class="dishes-grid">
+                    <!-- Шаурма -->
+                    <div class="dish-card" data-category="shawarma">
+                        <div class="dish-image">
+                            <div class="dish-placeholder">🌯</div>
+                            <div class="dish-badge">Хіт продажів</div>
+                        </div>
+                        <div class="dish-content">
+                            <div class="dish-rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating-count">(150+)</span>
+                            </div>
+                            <h3 class="dish-title">Шаурма з куркою (звичайна)</h3>
+                            <p class="dish-description">
+                                Соковита курка, мариновані овочі, свіжі помідори, огірки та фірмовий соус у тонкому лаваші.
+                            </p>
+                            <div class="dish-footer">
+                                <div class="dish-price">
+                                    <span class="price">125 ₴</span>
+                                </div>
+                                <button class="add-btn" aria-label="Додати до кошика">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Люля-кебаб -->
+                    <div class="dish-card" data-category="kebab">
+                        <div class="dish-image">
+                            <div class="dish-placeholder">🥙</div>
+                        </div>
+                        <div class="dish-content">
+                            <div class="dish-rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <h3 class="dish-title">Люля-кебаб у лаваші (курка)</h3>
+                            <p class="dish-description">
+                                Ароматний люля-кебаб з курки, приготований на мангалі, з свіжими овочами та соусом.
+                            </p>
+                            <div class="dish-footer">
+                                <div class="dish-price">
+                                    <span class="price">100 ₴</span>
+                                </div>
+                                <button class="add-btn" aria-label="Додати до кошика">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаурма подвійна -->
+                    <div class="dish-card" data-category="shawarma">
+                        <div class="dish-image">
+                            <div class="dish-placeholder">🌯</div>
+                            <div class="dish-badge size">XL</div>
+                        </div>
+                        <div class="dish-content">
+                            <div class="dish-rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating-count">(76)</span>
+                            </div>
+                            <h3 class="dish-title">Шаурма з куркою (подвійна)</h3>
+                            <p class="dish-description">
+                                Подвійна порція соковитої курки для справжніх любителів шаурми. Ситна та смачна!
+                            </p>
+                            <div class="dish-footer">
+                                <div class="dish-price">
+                                    <span class="price">160 ₴</span>
+                                </div>
+                                <button class="add-btn" aria-label="Додати до кошика">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кебаб зі свинини -->
+                    <div class="dish-card" data-category="kebab">
+                        <div class="dish-image">
+                            <div class="dish-placeholder">🥙</div>
+                        </div>
+                        <div class="dish-content">
+                            <div class="dish-rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating-count">(64)</span>
+                            </div>
+                            <h3 class="dish-title">Люля-кебаб у лаваші (свинина)</h3>
+                            <p class="dish-description">
+                                Соковитий люля-кебаб зі свинини з традиційними вірменськими спеціями.
+                            </p>
+                            <div class="dish-footer">
+                                <div class="dish-price">
+                                    <span class="price">110 ₴</span>
+                                </div>
+                                <button class="add-btn" aria-label="Додати до кошика">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Бургер -->
+                    <div class="dish-card" data-category="burger">
+                        <div class="dish-image">
+                            <div class="dish-placeholder">🍔</div>
+                        </div>
+                        <div class="dish-content">
+                            <div class="dish-rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating-count">(42)</span>
+                            </div>
+                            <h3 class="dish-title">Кавказький бургер</h3>
+                            <p class="dish-description">
+                                Бургер з яловичиною на грилі, вірменськими спеціями та фірмовим соусом.
+                            </p>
+                            <div class="dish-footer">
+                                <div class="dish-price">
+                                    <span class="price">180 ₴</span>
+                                </div>
+                                <button class="add-btn" aria-label="Додати до кошика">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Гриль -->
+                    <div class="dish-card" data-category="grill">
+                        <div class="dish-image">
+                            <div class="dish-placeholder">🍖</div>
+                            <div class="dish-badge chef">Chef's Choice</div>
+                        </div>
+                        <div class="dish-content">
+                            <div class="dish-rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating-count">(95)</span>
+                            </div>
+                            <h3 class="dish-title">Мікс-гриль по-вірменськи</h3>
+                            <p class="dish-description">
+                                Асорті з курки, свинини та яловичини, приготовані на справжньому мангалі.
+                            </p>
+                            <div class="dish-footer">
+                                <div class="dish-price">
+                                    <span class="price">350 ₴</span>
+                                </div>
+                                <button class="add-btn" aria-label="Додати до кошика">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cta">
+                    <a href="#" class="view-full-menu">
+                        <span>Переглянути повне меню</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="special-offers">
+            <div class="container">
+                <h2 class="section-title white">Спеціальні пропозиції</h2>
+                <div class="offers-grid">
+                    <div class="offer-card primary">
+                        <div class="offer-content">
+                            <h3 class="offer-title">КОМБО "ВІРМЕНСЬКЕ"</h3>
+                            <p class="offer-description">2 шаурми + 2 напої + десерт</p>
+                            <div class="offer-price">
+                                <span class="old-price">320 ₴</span>
+                                <span class="new-price">280 ₴</span>
+                            </div>
+                            <button class="offer-btn">ЗАМОВИТИ</button>
+                        </div>
+                        <div class="offer-image">
+                            <div class="offer-placeholder">💕</div>
+                        </div>
+                    </div>
+
+                    <div class="offer-card highlight">
+                        <div class="offer-content">
+                            <h3 class="offer-title">ГРИЛЬ-СІМЕЙНИЙ</h3>
+                            <p class="offer-description">Мікс-гриль + 4 гарніри + соуси</p>
+                            <div class="offer-price">
+                                <span class="old-price">450 ₴</span>
+                                <span class="new-price">380 ₴</span>
+                            </div>
+                            <button class="offer-btn">ЗАМОВИТИ</button>
+                        </div>
+                        <div class="offer-image">
+                            <div class="offer-placeholder">👨‍👩‍👧‍👦</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Що кажуть наші клієнти</h2>
+                    <p class="section-description">
+                        Відгуки справжніх гурманів, які оцінили автентичний смак нашої вірменської кухні.
+                    </p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">МП</div>
+                            <div class="reviewer-info">
+                                <h4>Марина Петренко</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                                <span class="review-date">2 дні тому</span>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Найкраща шаурма в Києві! Справжній вірменський смак, соковите м'ясо та свіжі овочі. Доставили точно в час. Рекомендую всім!"
+                        </p>
+                        <div class="review-source">Google Reviews</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">ОК</div>
+                            <div class="reviewer-info">
+                                <h4>Олександр Коваленко</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                                <span class="review-date">5 днів тому</span>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Люля-кебаб просто неперевершений! Відчувається, що готують справжні професіонали. Спеції ідеально збалансовані, м'ясо соковите."
+                        </p>
+                        <div class="review-source">Facebook</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">АМ</div>
+                            <div class="reviewer-info">
+                                <h4>Анна Мельник</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                                <span class="review-date">1 тиждень тому</span>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Замовляю тут постійно! Швидка доставка, завжди гаряче та смачне. Особливо подобається мікс-гриль - справжня насолода!"
+                        </p>
+                        <div class="review-source">Instagram</div>
+                    </div>
+                </div>
+
+                <div class="reviews-summary">
+                    <div class="summary-item">
+                        <span class="summary-number">4.9</span>
+                        <span class="summary-label">Середня оцінка</span>
+                        <div class="summary-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">500+</span>
+                        <span class="summary-label">Відгуків</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">98%</span>
+                        <span class="summary-label">Задоволених клієнтів</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery Section -->
+        <section id="delivery" class="delivery">
+            <div class="delivery-content container">
+                <div class="delivery-text">
+                    <div class="section-badge white">
+                        <span>🚀</span>
+                        <span>Швидка доставка</span>
+                    </div>
+                    <h2 class="delivery-title">30 ХВИЛИН ШВИДКОЇ ДОСТАВКИ ПО КИЄВУ</h2>
+                    <p class="delivery-description">
+                        Якщо ми не встигнемо доставити ваше замовлення за 30 хвилин, ви отримаєте знижку 50% на наступне замовлення! Працюємо по всьому Києву.
+                    </p>
+                    <div class="delivery-features">
+                        <div class="delivery-feature">
+                            <span class="feature-icon">🕐</span>
+                            <span>Доставка 24/7</span>
+                        </div>
+                        <div class="delivery-feature">
+                            <span class="feature-icon">🆓</span>
+                            <span>Безкоштовно від 300 ₴</span>
+                        </div>
+                        <div class="delivery-feature">
+                            <span class="feature-icon">📱</span>
+                            <span>Відстеження замовлення</span>
+                        </div>
+                    </div>
+                    <div class="delivery-cta">
+                        <button class="cta-primary large">ЗАМОВИТИ ЗАРАЗ</button>
+                        <a href="tel:+380441234567" class="delivery-phone">
+                            <span>📞</span>
+                            <div>
+                                <span>Подзвонити зараз</span>
+                                <span>+380 44 123 45 67</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="delivery-image">
+                    <div class="delivery-illustration">
+                        <div class="delivery-bike">🏍️</div>
+                        <div class="delivery-path">
+                            <div class="path-dot"></div>
+                            <div class="path-dot"></div>
+                            <div class="path-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation">
+            <div class="reservation-content container">
+                <div class="reservation-info">
+                    <h2 class="reservation-title">ЗАБРОНЮЙТЕ СТОЛИК У НАШОМУ РЕСТОРАНІ</h2>
+                    <p class="reservation-description">
+                        Насолоджуйтесь автентичною вірменською кухнею в затишній атмосфері нашого ресторану. Ідеально для романтичних вечерь, сімейних обідів та корпоративних заходів.
+                    </p>
+                    <div class="reservation-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎵</span>
+                            <span>Жива музика по вихідних</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🍷</span>
+                            <span>Винна карта з вірменськими винами</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">👨‍🍳</span>
+                            <span>Шеф-кухар з Вірменії</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+380 44 123 45 67</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>booking@armenian-grill.ua</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>вул. Хрещатик, 22, Київ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-container">
+                    <form class="reservation-form" id="reservationForm">
+                        <h3 class="form-title">
+                            <span>🏪</span>
+                            <span>Бронювання столика</span>
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Ваше ім'я *</label>
+                                <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+380 XX XXX XX XX">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Кількість гостей *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Оберіть кількість</option>
+                                    <option value="1">1 особа</option>
+                                    <option value="2">2 особи</option>
+                                    <option value="3">3 особи</option>
+                                    <option value="4">4 особи</option>
+                                    <option value="5">5 осіб</option>
+                                    <option value="6">6 осіб</option>
+                                    <option value="7+">7+ осіб</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Дата *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Час *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Оберіть час</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Додаткові побажання</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Особливі побажання, алергії, святкування..."></textarea>
+                        </div>
+                        <button type="submit" class="reserve-btn">
+                            <span>ЗАБРОНЮВАТИ СТОЛИК</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section class="instagram">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наша галерея в Instagram</h2>
+                    <p class="section-description">
+                        Слідкуйте за нами в соціальних мережах та діліться своїми враженнями з хештегом #ArmenianGrillHouse
+                    </p>
+                </div>
+
+                <div class="instagram-grid">
+                    <div class="instagram-item">
+                        <div class="instagram-placeholder">🌯</div>
+                        <div class="instagram-overlay">
+                            <span class="instagram-icon">📷</span>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-placeholder">🥙</div>
+                        <div class="instagram-overlay">
+                            <span class="instagram-icon">📷</span>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-placeholder">🍖</div>
+                        <div class="instagram-overlay">
+                            <span class="instagram-icon">📷</span>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-placeholder">🔥</div>
+                        <div class="instagram-overlay">
+                            <span class="instagram-icon">📷</span>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-placeholder">👨‍🍳</div>
+                        <div class="instagram-overlay">
+                            <span class="instagram-icon">📷</span>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <div class="instagram-placeholder">🇦🇲</div>
+                        <div class="instagram-overlay">
+                            <span class="instagram-icon">📷</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://instagram.com/armeniangrillhouse" class="social-link instagram" target="_blank" rel="noopener">
+                        <span>📷</span>
+                        <span>@armeniangrillhouse</span>
+                    </a>
+                    <a href="https://facebook.com/armeniangrillhouse" class="social-link facebook" target="_blank" rel="noopener">
+                        <span>📘</span>
+                        <span>Armenian Grill House</span>
+                    </a>
+                    <a href="https://t.me/armeniangrillhouse" class="social-link telegram" target="_blank" rel="noopener">
+                        <span>✈️</span>
+                        <span>Telegram канал</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">🇦🇲</div>
+                        <span class="logo-text">ARMENIAN GRILL</span>
+                    </div>
+                    <p class="footer-description">
+                        Автентична вірменська кухня у серці Києва. Найсмачніша шаурма та кебаб з доставкою за 30 хвилин.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Контакти</h3>
+                <div class="footer-contacts">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>вул. Хрещатик, 22, Київ, 01001</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+380441234567">+380 44 123 45 67</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <a href="mailto:info@armenian-grill.ua">info@armenian-grill.ua</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Години роботи</h3>
+                <div class="footer-hours">
+                    <div class="hours-item">
+                        <span>Понеділок - П'ятниця:</span>
+                        <span>10:00 - 23:00</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Субота - Неділя:</span>
+                        <span>09:00 - 24:00</span>
+                    </div>
+                    <div class="hours-note">
+                        <span>🚚 Доставка: 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Корисні посилання</h3>
+                <ul class="footer-links">
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="/privacy">Політика конфіденційності</a></li>
+                    <li><a href="/terms">Умови користування</a></li>
+                    <li><a href="/careers">Кар'єра</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Підписатися на новини</h3>
+                <p class="newsletter-description">Отримуйте спеціальні пропозиції та новини першими!</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" aria-label="Підписатися">
+                            <span>📧</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="social-media">
+                    <a href="https://facebook.com/armeniangrillhouse" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+                    <a href="https://instagram.com/armeniangrillhouse" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                    <a href="https://t.me/armeniangrillhouse" target="_blank" rel="noopener" aria-label="Telegram">✈️</a>
+                    <a href="https://youtube.com/@armeniangrillhouse" target="_blank" rel="noopener" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Armenian Grill House. Всі права захищені.</p>
+                    <div class="payment-methods">
+                        <span>Приймаємо до оплати:</span>
+                        <div class="payment-icons">
+                            <span>💳</span>
+                            <span>💴</span>
+                            <span>📱</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Повернутися до верху">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Schema.org for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Armenian Grill House",
+        "description": "Найсмачніша шаурма та автентична вірменська кухня в Києві",
+        "url": "https://armenian-grill.ua",
+        "telephone": "+380441234567",
+        "email": "info@armenian-grill.ua",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "вул. Хрещатик, 22",
+            "addressLocality": "Київ",
+            "postalCode": "01001",
+            "addressCountry": "UA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.4501,
+            "longitude": 30.5234
+        },
+        "openingHours": [
+            "Mo-Fr 10:00-23:00",
+            "Sa-Su 09:00-24:00"
+        ],
+        "servesCuisine": ["Armenian", "Middle Eastern", "Fast Food"],
+        "acceptsReservations": true,
+        "hasDeliveryService": true,
+        "priceRange": "₴₴",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "500"
+        },
+        "menu": "https://armenian-grill.ua/#menu",
+        "sameAs": [
+            "https://www.facebook.com/armeniangrillhouse",
+            "https://www.instagram.com/armeniangrillhouse",
+            "https://t.me/armeniangrillhouse"
+        ]
+    }
+    </script>
+</body>
+</html>">Шаурма + напій + картопля фрі</p>
+                            <div class="offer-price">
+                                <span class="old-price">200 ₴</span>
+                                <span class="new-price">160 ₴</span>
+                            </div>
+                            <button class="offer-btn">ЗАМОВИТИ</button>
+                        </div>
+                        <div class="offer-image">
+                            <div class="offer-placeholder">🎯</div>
+                        </div>
+                    </div>
+
+                    <div class="offer-card secondary">
+                        <div class="offer-content">
+                            <h3 class="offer-title">КЕБАБ-СНІДАНОК</h3>
+                            <p class="offer-description">Люля-кебаб + кава + салат до 11:00</p>
+                            <div class="offer-price">
+                                <span class="new-price">120 ₴</span>
+                            </div>
+                            <button class="offer-btn">ЗАМОВИТИ</button>
+                        </div>
+                        <div class="offer-image">
+                            <div class="offer-placeholder">🌅</div>
+                        </div>
+                    </div>
+
+                    <div class="offer-card accent">
+                        <div class="offer-content">
+                            <h3 class="offer-title">ВЕЧЕРЯ НА ДВОХ</h3>
+                            <p class="offer-description
